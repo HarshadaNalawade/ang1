@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Books Listing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+
+<div class="container" ng-app="Books" ng-controller="booksController">
+  <h2>Books Listing</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="book in books">
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+<script src="booksController.js"></script>
