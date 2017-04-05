@@ -1,0 +1,17 @@
+{
+  "name": "ang_node1",
+  "version": "1.0.0",
+  "description": "Trying backend for angular with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harshada",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.13.0"
+  }
+}
